@@ -52,7 +52,7 @@ export const InputTags = ({
 
   useLayoutEffect(() => {
     if (terms.length === 0) {
-      setFocusIndex(-1)
+      // setFocusIndex(-1)
     }
     onTags({ values: terms, name: name })
   }, [terms.length]) // eslint-disable-line react-hooks/exhaustive-deps
