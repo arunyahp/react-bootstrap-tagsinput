@@ -98,7 +98,7 @@ export const InputTags = (_a) => {
             const focus = focusIndex === index;
             return (React.createElement(Element, { key: `${item}${index}`, value: item, index: index, onRemove: handleRemove, focus: focus, onSelectedIndex: setSelectedIndex, className: elementClassName }));
         }),
-        React.createElement("input", Object.assign({ "data-testid": 'input-tags', ref: inputRef, type: 'text', className: classnames('border-0 w-auto flex-fill input-tags', className), placeholder: placeholder, "aria-label": placeholder, value: value, onChange: onchange, onKeyUp: onkeyup, onKeyDown: onkeydown, autoFocus: true, name: name }, rest))));
+        React.createElement("input", Object.assign({ "data-testid": 'input-tags', ref: inputRef, type: 'text', className: classnames('border-0 w-auto flex-fill input-tags', className), placeholder: placeholder, "aria-label": placeholder, value: value, onChange: onchange, onKeyUp: onkeyup, onKeyDown: onkeydown, autoFocus: false, name: name }, rest))));
 };
 const Element = (props) => {
     const [focus, setFocus] = useState(false);
