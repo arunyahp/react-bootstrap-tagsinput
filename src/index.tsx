@@ -157,7 +157,7 @@ export const InputTags = ({
         onChange={onchange}
         onKeyUp={onkeyup}
         onKeyDown={onkeydown}
-        autoFocus
+        autoFocus={false}
         name={name}
         {...rest}
       />
